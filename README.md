@@ -31,6 +31,7 @@ Basic Inventory Management System application using Next.js. This version of the
    ```
 3. **Create an .env.local**:
     Create a .env.local file in the root directory and paste in your Neon database connection string:
+    
     DATABASE_URL=postgresql://neondb_owner:npg_VpgP90slhEfL@ep-nameless-math-a53lfiak-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require
 
 4. **Start the server**:
