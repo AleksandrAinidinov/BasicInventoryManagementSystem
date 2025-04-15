@@ -1,40 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Inventory Management System (Only Create and Read)
 
-## Getting Started
+## Developer
 
-First, run the development server:
+- **Name**: Aleksandr Ainidinov  
+- **Student ID**: 8905450
+- **Class**: PROG2390 - Small Business Solutions - Sec4
+- **Date**: 2025-04-14
+- **Assignment**: Lab 5: Review Lab for Final: Basic Inventory Management System with Neon.Tech
+- **GitHub Repository**: [BasicInventoryManagementSystem](https://github.com/AleksandrAinidinov/BasicInventoryManagementSystem)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Basic Inventory Management System application using Next.js. This version of the system allows adding new items and viewing all the inventory items in the system.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Installation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/AleksandrAinidinov/BasicInventoryManagementSystem.git
+   cd basic-inventory-management-system
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Install dependencies**:
+   Ensure you have Next.js and PG installed, then run:
+   ```bash
+   npm install
+   npm install pg
+   ```
+3. **Create an .env.local**:
+    Create a .env.local file in the root directory and paste in your Neon database connection string:
+    DATABASE_URL=postgresql://neondb_owner:npg_VpgP90slhEfL@ep-nameless-math-a53lfiak-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require
 
-## Learn More
+4. **Start the server**:
+   Launch the application locally:
+   ```bash
+   npm run dev 
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+After starting the server, you can access the following pages:
 
-## Deploy on Vercel
+- **Home Page**: `http://localhost:3000`  
+  The main landing page of the application.
+- **Add Item**: `http://localhost:3000/add`  
+  Page that allows adding a new inventory item.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## License
+
+This project is licensed under the MIT License. You are free to use, modify, and distribute it as permitted under this license.
